@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "1955-Black Italic";
+    src: url("fuentes/1955 Black Italic.otf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "1955-Black";
+    src: url("fuentes/1955 Black.otf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "1955-Light Italic";
+    src: url("fuentes/1955 Light Italic.otf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "1955-Light";
+    src: url("fuentes/1955 Light.otf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "1955-Medium Italic";
+    src: url("fuentes/1955 Medium Italic.otf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "1955-Medium";
+    src: url("fuentes/1955 Medium.otf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "1955-Thin Italic";
+    src: url("fuentes/1955 Thin Italic.otf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "1955-Thin";
+    src: url("fuentes/1955 Thin.otf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    font-family: '1955-Medium';
+    font-size: 3rem;
+}
+
+/* No entiendo bien cómo funciona :hover, pero cambia el color al pasar el mouse */
+nav a:hover {
+    color: greenyellow;
+}
+
+header section {
+    line-height: 0.9;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+}
+
+body {
+    font-family: '1955-Light', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 0.9;
+    background-color: rgb(180, 178, 178);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+.nombre-apellido {
+    color: rgb(255, 255, 255);
+    font-family: "1955-Medium";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.curriculum-vitae {
+    color: rgb(255, 255, 255);
+    font-family: "1955-Thin";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 4rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.color-destacadoverde {
+    color: greenyellow;
+    font-size: 3rem;
+    font-family: "1955-Medium", sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.sub-seccion {
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    font-family: "1955-Medium Italic", sans-serif;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.sub-titulo {
+    color: black;
+    font-family: "1955-Thin";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+.tamaño-textoprincipal {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: left;
+    max-width: 45ch;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.texto2 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: left;
+    max-width: 45ch;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    color: rgb(0, 0, 0);
+    font-family: "1955-Thin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 70%;
+    text-align: center;
+}
+
+header nav {
+    margin-left: 30px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/* Uso flex-wrap para que en pantalla chica la foto y el texto se apilen solos */
+.intro-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.intro-flex img {
+    width: 550px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+#sobre-mi {
+    flex: 1;
+    min-width: 250px;
+}
+
+.articulo-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.articulo-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.galeria-docencia {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+    gap: 0.5rem;
+}
+
+.figura-grande {
+    margin: 0;
+}
+
+.figura-grande img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.galeria-doble {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.galeria-doble figure {
+    flex: 1;
+    margin: 0;
+}
+
+.galeria-doble figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.pie-foto {
+    font-size: 70%;
+    font-family: "1955-Thin", sans-serif;
+    font-weight: 100;
+    color: black;
+    margin-top: 0.2rem;
+}
+
+#experiencia-laboral .articulo-flex {
+    margin-bottom: 3rem;
+}
+
+.habilidades-panel {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.habilidades-titulo {
+    color: white;
+    font-family: "1955-Medium", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.habilidades-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.habilidad-recuadro {
+    flex: 1;
+    min-width: 150px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: white;
+    font-family: "1955-Light", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.galeria-fotografia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.galeria-fotografia figure {
+    flex: 1;
+    min-width: 250px;
+    margin: 0;
+}
+
+.galeria-fotografia figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fotografia-textos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.fotografia-textos .tamaño-textoprincipal {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-iconos img {
+    width: 40px;
+    height: auto;
+    margin-top: 8rem;
+}
+
+.parrafo-personal {
+    font-family: "1955-Medium", sans-serif;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-wrap: pretty;
+    max-width: 45ch;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cuadrado-deco {
+    width: 80px;
+    height: 80px;
+    background-color: greenyellow;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+}
